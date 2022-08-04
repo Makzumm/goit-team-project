@@ -1,0 +1,91 @@
+@charset "UTF-8";
+@import '~node_modules/modern-normalize/modern-normalize.css';
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+/* Стили для обнуления верхних отступов у элементов */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+/* Класс для обнуления базовых свойств у списков (ul) */
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* Класс для обнуления базовых свойств у ссылок */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Свойства для корректного отображения картинок */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Свойства для обнуления курсива у address */
+address {
+  font-style: normal;
+}
+
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+:root {
+  --main-white: #fff;
+  --main-black: #000;
+  --light-pink: #FFB8CA;
+  --dark-pink: #FFA5BA;
+  --subtitle-color: #FFA5BA;
+  --mobile-bg-col: #E18298;
+  --red-color: #D41443;
+  --titles-color: #D41443;
+  --light-grey: #907E82;
+  --sand-yellow: #F0D1A5;
+  --light-green: #C2E297;
+  --border-line-color: #E1E1E1;
+  --about-bg-color: #FFF5F6;
+  --contacts-bg-color: #FFF5F6;
+}/*# sourceMappingURL=index.css.map */
