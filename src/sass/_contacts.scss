@@ -1,0 +1,117 @@
+body, ul, li, p, a {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+.section {
+    padding: 0 20px;
+    // max-width: 280px;
+}
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+.contacts__container {
+    display: flex;
+    flex-direction: column;
+
+    padding: 40px 32px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+}
+.contacts__container:not(last-of-type) {
+    margin-bottom: 20px;
+}
+.contacts__title {
+    position: absolute;
+    opacity: 0;
+    top: -9999px;
+    left: -9999px;
+}
+.contacts__item-wrap {
+    display: flex;
+    height: 16px;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+.contacts__item-wrap.foodtruck{
+    width: 130px;
+    background-color: #C2E297;
+}
+.contacts__item-wrap.cafe{
+    width: 80px;
+    background: #F0D1A5;
+}
+.contacts__item {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 24px 0;
+    line-height: 1.86;
+    color: #000000;
+}
+.contacts__item:first-of-type {
+    padding: 0 0 24px 0;
+}
+.contacts__item:last-of-type {
+    padding: 24px 0 0 0;
+}
+.contacts__item:not(:last-of-type){
+    border-bottom: 1px solid #E1E1E1;
+}
+.contacts__item-title {
+    margin-bottom: 8px;
+    letter-spacing: 0.04em;
+}
+.contacts__description--place {
+    margin: 0;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5; 
+    color: #907E82;
+}
+.contacts__description--working-days {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    color: #000000;
+}
+.contacts__description--working-time {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+     color: #FFA5BA;
+}
+.contacts--phone,
+.contacts--email {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #907E82;
+}
+.contacts--phone:focus,
+.contacts--email:focus,
+.contacts--phone:hover,
+.contacts--email:hover {
+    color: #D41443;
+}
