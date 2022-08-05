@@ -1,16 +1,16 @@
 html {
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
 *::after,
 *::before {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-    font-family: 'DM Sans', sans-serif;
+  font-family: 'DM Sans', sans-serif;
 }
 
 /* Стили для обнуления верхних отступов у элементов */
@@ -21,45 +21,45 @@ h4,
 h5,
 h6,
 p {
-    margin: 0;
+  margin: 0;
 }
 
 /* Класс для обнуления базовых свойств у списков (ul) */
 ul {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
 /* Класс для обнуления базовых свойств у ссылок */
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Свойства для корректного отображения картинок */
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Свойства для обнуления курсива у address */
 address {
-    font-style: normal;
+  font-style: normal;
 }
 
 .container {
-    margin: 0 auto;
-    // @media screen and (min-width: 320px) {
-    //         width: 320px;
-    //         padding: 0 20px;
-    // }
-    @media screen and (min-width: 768px) {
-            width: 768px;
-            padding: 0 32px;
-    }
-    @media screen and (min-width: 1200px) {
-        width: 1200px;
-    }
+  margin: 0 auto;
+  padding: 0 20px;
+  @media screen and (min-width: 320px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding: 0 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }

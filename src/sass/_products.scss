@@ -1,0 +1,142 @@
+.products-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.products-section__subtitle {
+  font-family: 'Titan One', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffa5ba;
+
+  margin-bottom: 15px;
+}
+
+.products-section__title {
+  font-family: 'Titan One', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #d41443;
+
+  margin-bottom: 148px;
+}
+
+.products-section__item:not(:last-child) {
+  margin-bottom: 140px;
+}
+
+.products-section__item {
+  position: relative;
+
+  background: #ffb8ca;
+  border-radius: 24px;
+
+  padding-top: 160px;
+  padding-bottom: 40px;
+
+  &::before {
+    position: absolute;
+    top: -140px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 280px;
+    height: 280px;
+
+    content: ' ';
+    background-image: url('../images/products/mob/products-ice-mob1@1x.png');
+  }
+}
+
+.products-section__title-inner {
+  font-family: 'Titan One', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  margin-bottom: 32px;
+}
+
+.products-section__pseudo-element {
+  line-height: 0;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.products-section__pseudo-element-inner {
+  position: relative;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #ffffff;
+  display: inline-block;
+
+  &::after,
+  &::before {
+    position: absolute;
+    top: 0;
+
+    content: ' ';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #ffffff;
+    display: block;
+  }
+  &::after {
+    left: 10px;
+  }
+
+  &::before {
+    right: 10px;
+  }
+}
+
+.products-section__text {
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+
+.products-section__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: transparent;
+  cursor: pointer;
+}
+.products-section__icon {
+  flex-shrink: 0;
+}
