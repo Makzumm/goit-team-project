@@ -208,7 +208,6 @@ address {
 }
 
 .hero {
-  position: relative;
   height: 444px;
   background-color: var(--light-pink);
   overflow: hidden;
@@ -226,6 +225,7 @@ address {
 
 .hero-container {
   height: 100%;
+  position: relative;
 }
 
 .hero-title {
