@@ -8,6 +8,7 @@
     
     @media screen and (min-width: 768px) {
         height: 334px;
+        overflow: visible;
     }
     @media screen and (min-width: 1200px) {
         height: 578px;
@@ -178,6 +179,10 @@
         bottom: 16px;
         left: 32px;
     }
+    @media screen and (min-width: 1200px) {
+        bottom: 61px;
+        left: 16px;
+    }
 }
 
 .hero-girl-icon {
@@ -326,4 +331,60 @@
         font-size: 46px;
         line-height: 1.152;
     }
+}
+
+.hero-lorem {
+    
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+    @media screen and (min-width: 768px) {
+        width: 114px;
+        position: absolute;
+        z-index: 10;
+        bottom: 56px;
+        left: 184px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 200px;
+        bottom: 85px;
+        left: 229px;
+    }
+
+}
+.hero-lorem-text {
+
+    @media screen and (min-width: 768px) {
+        font-size: 8px;
+        line-height: 1.5;
+        color: var(--main-white);
+        padding-bottom: 7px;
+        }
+    
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.43;
+        padding-bottom: 20px;
+    }
+    
+}
+
+.buttom-lorem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-white);
+    border-radius: 50%;
+    border: none;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+
+    @media screen and (min-width: 1200px) {
+        width: 26px;
+        height: 26px;
+    }
+}
+.lorem-button-icon {
+    fill: var(--red-color);
 }
