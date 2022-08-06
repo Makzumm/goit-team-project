@@ -83,6 +83,8 @@
 .products-section__item {
   position: relative;
 
+  perspective: 1000px;
+
   border-radius: 24px;
 
   padding-top: 160px;
@@ -101,6 +103,44 @@
     padding-bottom: 60px;
   }
 }
+
+// front/back cards side
+.front,
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  border-radius: 24px;
+
+  padding-top: 160px;
+  padding-bottom: 40px;
+
+  backface-visibility: hidden;
+  transition: 1s;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 118px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 165px;
+    padding-bottom: 60px;
+  }
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.products-section__item.is-flipped .front {
+  transform: rotateY(180deg);
+}
+
+.products-section__item.is-flipped .back {
+  transform: rotateY(360deg);
+}
+// ***
 
 .products-section__item--first {
   background: var(--light-pink);
@@ -204,6 +244,7 @@
 .products-section__item--third {
   background: var(--light-green);
 
+  // image
   &::before {
     position: absolute;
     top: -140px;
@@ -234,6 +275,7 @@
         (min-resolution: 2dppx) {
         background-image: url('../images/products/desktp/products-ice-desktp3@2x.png');
       }
+      // ***
     }
 
     @media screen and (min-width: 1200px) {
@@ -272,6 +314,7 @@
   }
 }
 
+// 3 points
 .products-section__pseudo-element {
   line-height: 0;
   text-align: center;
@@ -305,7 +348,7 @@
     right: 10px;
   }
 }
-
+// ***
 .products-section__text {
   font-family: 'DM Sans', sans-serif;
   font-style: normal;
