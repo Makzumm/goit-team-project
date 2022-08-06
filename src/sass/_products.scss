@@ -82,25 +82,27 @@
 
 .products-section__item {
   position: relative;
-
+  height: 493px; //?????????????
   perspective: 1000px;
 
   border-radius: 24px;
 
-  padding-top: 160px;
-  padding-bottom: 40px;
+  // padding-top: 160px;
+  // padding-bottom: 40px;
 
   @media screen and (min-width: 768px) {
     flex-basis: calc(100% / 3 - 16px);
     margin-right: 16px;
-    padding-top: 118px;
+    // padding-top: 118px;
+    height: 495.5px;
   }
 
   @media screen and (min-width: 1200px) {
     flex-basis: calc(100% / 3 - 32px);
     margin-right: 32px;
-    padding-top: 165px;
-    padding-bottom: 60px;
+    // padding-top: 165px;
+    // padding-bottom: 60px;
+    height: 570px;
   }
 }
 
@@ -117,7 +119,7 @@
   padding-bottom: 40px;
 
   backface-visibility: hidden;
-  transition: 1s;
+  transition: transform 250ms linear;
 
   @media screen and (min-width: 768px) {
     padding-top: 118px;
@@ -140,7 +142,6 @@
 .products-section__item.is-flipped .back {
   transform: rotateY(360deg);
 }
-// ***
 
 .products-section__item--first {
   background: var(--light-pink);
@@ -177,7 +178,6 @@
     }
 
     @media screen and (min-width: 1200px) {
-      transform: translate(-50%);
       width: 368px;
       height: 294px;
 
@@ -244,7 +244,6 @@
 .products-section__item--third {
   background: var(--light-green);
 
-  // image
   &::before {
     position: absolute;
     top: -140px;
@@ -275,7 +274,6 @@
         (min-resolution: 2dppx) {
         background-image: url('../images/products/desktp/products-ice-desktp3@2x.png');
       }
-      // ***
     }
 
     @media screen and (min-width: 1200px) {
@@ -292,6 +290,7 @@
     }
   }
 }
+// ***
 
 .products-section__title-inner {
   font-family: 'Titan One', sans-serif;
@@ -385,6 +384,12 @@
   border: transparent;
   background-color: var(--main-white);
   cursor: pointer;
+  transition: transform 250ms linear;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.5);
+  }
 }
 .products-section__icon {
   fill: var(--red-color);
