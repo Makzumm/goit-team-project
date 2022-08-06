@@ -1,0 +1,117 @@
+// header
+
+.header {
+    background-color: var(--light-pink);
+}
+
+.header-container {
+    padding-top: 8px;
+
+    @media screen and (min-width: 768px) {
+            padding-top: 32px;
+        }
+    @media screen and (min-width: 768px) {
+        padding-top: 37px;
+    }
+}
+
+
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-button {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    @media screen and (min-width: 768px) {
+        margin-right: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+}
+
+
+.icon-logo {
+    display: block;
+    
+    @media screen and (min-width: 768px) {
+        margin-right: 293px;
+        }
+    @media screen and (min-width: 1200px) {
+        margin-right: 0px;
+    }
+}
+
+
+.icon-burger {
+    display: block;
+}
+
+.button-buy {
+    @media screen and (max-width: 767px) {
+        display: none;
+            
+        }
+    
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        align-items: center;
+        width: 160px;
+        height: 44px;
+        border-radius: 22px;
+        border: none;
+        background-color: var(--main-white);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.31;
+        color: var(--red-color);
+        cursor: pointer;
+
+        &:hover, &:focus {
+            background-color:#ECEBEB;
+        }
+        }
+}
+
+// site nav
+
+.site-nav {
+    @media screen and (max-width: 1199px) {
+        display: none; 
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
+}
+
+.site-nav-item:not(:last-child) {
+    margin-right: 35px;
+}
+
+.site-nav-link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    color: var(--main-white);
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    &:hover,
+        &:focus {
+            color: var(--red-color);
+        }
+}
+.site-nav-link.curent {
+    color: var(--red-color);
+}

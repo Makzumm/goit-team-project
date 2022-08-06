@@ -1,0 +1,329 @@
+// hero
+
+.hero {
+    position: relative;
+    height: 444px;
+    background-color: var(--light-pink);
+    overflow: hidden;
+    
+    @media screen and (min-width: 768px) {
+        height: 334px;
+    }
+    @media screen and (min-width: 1200px) {
+        height: 578px;
+    }
+}
+.hero-container {
+    height: 100%;
+    
+}
+.hero-title {
+    position: absolute;
+    z-index: 5;
+    top: 136px;
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.153;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--main-white);
+
+    @media screen and (min-width: 768px) {
+        font-size: 22px;
+        line-height: 1.136;
+        top: 20px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 38px;
+        line-height: 1.157;
+        top: 60px;
+    }
+}
+
+
+.hero-title_barnd {
+    font-size: 48px;
+    line-height: 0.96;
+    color: var(--red-color);
+
+    @media screen and (min-width: 768px) {
+            font-size: 34px;
+            line-height: 0.91;
+        }
+    @media screen and (min-width: 1200px) {
+        font-size: 58px;
+        line-height: 0.89;
+    }
+
+}
+
+// кнопки
+
+.hero-button-list {
+    position: absolute;
+    bottom: 158px;
+    z-index: 5;
+    display: flex;
+
+    @media screen and (min-width: 768px) {
+        bottom: 190px;
+    }
+    @media screen and (min-width: 1200px) {
+        bottom: 317px;
+    }
+}
+
+.button-products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 62.4px;
+    height: 24px;
+    background: var(--red-color);
+    border-radius: 20px;
+    border: none;
+    color: var(--main-white);
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    margin-right: 8px;
+
+    @media screen and (min-width: 1200px) {
+        width: 107px;
+        height: 40px;
+        font-size: 14px;
+        line-height: 1.28;
+    }
+}
+
+.button-how-its-made {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 82.8px;
+    height: 24px;
+    background: var(--main-white);
+    border-radius: 20px;
+    border: none;
+    color: var(--red-color);
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+
+    &:hover, &:focus {
+            background-color: #ECEBEB;
+        }
+
+    @media screen and (min-width: 1200px) {
+        width: 138px;
+        height: 40px;
+        font-size: 14px;
+        line-height: 1.28;
+    }
+}
+
+// картинки
+
+.hero-circle {
+    position: absolute;
+    z-index: 2;
+    background-color: var(--dark-pink);
+    border-radius: 50%;
+
+    @media screen and (max-width: 767px) {
+        top: 25px;
+        left: 50%;
+        transform: translateX(-36%);
+        width: 346px;
+        height: 344px;
+    }
+    @media screen and (min-width: 768px) {
+        width: 335px;
+        height: 333px;
+        bottom: 40px;
+        left: 248px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 534px;
+        height: 534px;
+        bottom: 77px;
+        left: 517px;
+    }
+}
+
+.hero-icecream {
+    position: absolute;
+    top: 9px;
+    left: 81px;
+
+    @media screen and(min-width: 768px) {
+        top: 37px;
+    }
+    @media screen and(min-width: 1200px) {
+        top: 54px;
+        left: 119px;
+    }
+}
+
+.hero-milk-icon {
+    
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        position: absolute;
+        bottom: 16px;
+        left: 32px;
+    }
+}
+
+.hero-girl-icon {
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+        @media screen and (min-width: 768px) {
+        position: absolute;
+        z-index: 10;
+        bottom: 0;
+        right: 32px;
+        }
+}
+
+
+
+// циферки кружечки
+
+.counter-cafe {
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        position: absolute;
+        width: 43px;
+        height: 44px;
+        right: 32px;
+        bottom: 280px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        position: absolute;
+        width: 72px;
+        height: 77px;
+        right: 32px;
+        bottom: 436px;
+    }
+}
+
+.number-16 {
+    position: absolute;
+    z-index: 10;
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--red-color);
+
+    @media screen and (min-width: 1200px) {
+        font-size: 46px;
+        line-height: 1.152;
+    }
+}
+
+.cafes {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    color: var(--main-white);
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.28;
+    }
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+
+    @media screen and (min-width: 1200px) {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.counter-food-trucks {
+    @media screen and (max-width: 767px) {
+            display: none;
+        }
+    @media screen and (min-width: 768px) {
+        position: absolute;
+        width: 51px;
+        height: 43px;
+        right: 32px;
+        bottom: 221px;
+    }
+    @media screen and (min-width: 1200px) {
+        position: absolute;
+        width: 92px;
+        height: 78px;
+        right: 32px;
+        bottom: 345px;
+    }
+}
+
+.food-trucks {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    color: var(--main-white);
+
+    @media screen and (min-width: 1200px) {
+            font-size: 14px;
+            line-height: 1.28;
+        }
+}
+.number-23 {
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--red-color);
+
+    @media screen and (min-width: 1200px) {
+        font-size: 46px;
+        line-height: 1.152;
+    }
+}
