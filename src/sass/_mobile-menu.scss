@@ -17,9 +17,12 @@ body.menu-open {
   }
 }
 
-.header-nav {
-  @media screen and (min-width: 768px) {
-    position: relative;
+.site-nav {
+  position: fixed;
+  left: 100%;
+  transition: left 70ms;
+  @media screen and (max-width: 1199px) {
+    display: block;
   }
 }
 
@@ -27,30 +30,33 @@ body.menu-open {
   @media screen and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     z-index: 11;
     width: 100%;
     height: calc(100vh + 37px);
     overflow-y: scroll;
-
     padding: 123px 0px 0px;
+
     background-color: var(--mobile-menu-color);
+    box-shadow: -50px 0px 50px 50px rgba(0, 0, 0, 0.13);
   }
   @media screen and (min-width: 768px) {
     padding: 180px 0px 0px;
     width: 254px;
     top: -37px;
+    left: calc(100% - 254px);
   }
 }
 
 .button-buy {
   .site-nav.is-open + & {
     @media screen and (max-width: 1199px) {
+      transition: all 100ms;
       z-index: 12;
       position: absolute;
-      top: 65px;
+      top: 88px;
       right: 34px;
       display: flex;
       justify-content: space-around;
@@ -73,12 +79,19 @@ body.menu-open {
       }
     }
     @media screen and (max-width: 767px) {
+      opacity: 1;
       width: 210px;
       top: 60px;
       left: 50%;
       transform: translateX(-50%);
       padding: 0px 50px;
     }
+  }
+}
+.button-buy {
+  @media screen and (max-width: 767px) {
+    opacity: 0;
+    transition: opacity 100ms;
   }
 }
 
@@ -91,5 +104,21 @@ body.menu-open {
     padding: 10px 20px;
     margin: 0;
     border: 1px solid var(--mobile-bg-col);
+  }
+}
+
+.header-container {
+  position: static;
+}
+.site-nav {
+  @media screen and (min-width: 1200px) {
+    position: static;
+  }
+}
+.header-button.is-open {
+  @media screen and (min-width: 768px) {
+    margin-right: 0;
+    position: absolute;
+    right: 214px;
   }
 }
