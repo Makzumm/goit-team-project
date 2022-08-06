@@ -1,7 +1,7 @@
 // hero
 
 .hero {
-    position: relative;
+    
     height: 444px;
     background-color: var(--light-pink);
     overflow: hidden;
@@ -15,7 +15,7 @@
 }
 .hero-container {
     height: 100%;
-    
+    position: relative;
 }
 .hero-title {
     position: absolute;
