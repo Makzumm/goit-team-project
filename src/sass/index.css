@@ -95,6 +95,7 @@ address {
 }
 
 .header-container {
+  position: relative;
   padding-top: 8px;
 }
 @media screen and (min-width: 768px) {
@@ -156,10 +157,11 @@ address {
 }
 @media screen and (min-width: 768px) {
   .button-buy {
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     display: flex;
     align-items: center;
+    padding: 0 30px 0 30px;
     width: 160px;
     height: 44px;
     border-radius: 22px;
@@ -184,6 +186,9 @@ address {
 @media screen and (min-width: 1200px) {
   .site-nav {
     display: flex;
+    position: absolute;
+    left: 343px;
+    z-index: 5;
   }
 }
 
@@ -215,6 +220,7 @@ address {
 @media screen and (min-width: 768px) {
   .hero {
     height: 334px;
+    overflow: visible;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -402,6 +408,12 @@ address {
     left: 32px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .hero-milk-icon {
+    bottom: 61px;
+    left: 16px;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .hero-girl-icon {
@@ -556,6 +568,66 @@ address {
     font-size: 46px;
     line-height: 1.152;
   }
+}
+
+@media screen and (max-width: 767px) {
+  .hero-lorem {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-lorem {
+    width: 114px;
+    position: absolute;
+    z-index: 10;
+    bottom: 56px;
+    left: 184px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-lorem {
+    width: 200px;
+    bottom: 85px;
+    left: 229px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-lorem-text {
+    font-size: 8px;
+    line-height: 1.5;
+    color: var(--main-white);
+    padding-bottom: 7px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-lorem-text {
+    font-size: 14px;
+    line-height: 1.43;
+    padding-bottom: 20px;
+  }
+}
+
+.buttom-lorem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-white);
+  border-radius: 50%;
+  border: none;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+@media screen and (min-width: 1200px) {
+  .buttom-lorem {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+.lorem-button-icon {
+  fill: var(--red-color);
 }
 
 .products-section {
