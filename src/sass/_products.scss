@@ -81,6 +81,8 @@
 }
 
 .products-section__item {
+  margin: 0 auto;
+  max-width: 600px;
   position: relative;
   height: 493px;
   perspective: 1000px;
@@ -109,6 +111,10 @@
 // front/back cards side
 .front,
 .back {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   width: 100%;
   height: 100%;
   position: absolute;
@@ -397,4 +403,16 @@
   fill: var(--red-color);
   width: 12px;
   height: 12px;
+}
+
+.products-section__text--back {
+  padding: 0;
+}
+
+.products-section__munu-wrap {
+  display: flex;
+  justify-content: space-around;
+}
+.products-section__munu-wrap:nth-child(-n + 3) {
+  margin-bottom: 10px;
 }
