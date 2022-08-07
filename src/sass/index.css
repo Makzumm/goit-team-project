@@ -427,6 +427,10 @@ address {
     bottom: 0;
     right: 32px;
   }
+  .hero-girl-icon:hover {
+    -webkit-animation: scale 0.6s ease-out;
+            animation: scale 0.6s ease-out;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -445,7 +449,11 @@ address {
     bottom: 280px;
     background-image: url(../images/hero-header/tab/Ellipse\ 1.png);
     background-repeat: no-repeat;
+<<<<<<< Updated upstream
     background-position: right 0;
+=======
+    background-position: 0;
+>>>>>>> Stashed changes
   }
 }
 @media screen and (min-width: 1200px) {

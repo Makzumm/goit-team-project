@@ -196,6 +196,10 @@
         z-index: 10;
         bottom: 0;
         right: 32px;
+
+        &:hover {
+        animation: scale .6s ease-out;
+        }
         }
 }
 
@@ -219,7 +223,11 @@
         bottom: 280px;
         background-image: url(../images/hero-header/tab/Ellipse\ 1.png);
         background-repeat: no-repeat;
+<<<<<<< Updated upstream
         background-position: right 0;
+=======
+        background-position: 0;
+>>>>>>> Stashed changes
     }
 
     @media screen and (min-width: 1200px) {
