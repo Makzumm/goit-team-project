@@ -1,6 +1,7 @@
 .section.section__gallery {
     position: relative;
 	padding: 0;
+	margin-top: -7%;
 }
 .container.gallery__container {
 	padding: 0;
@@ -28,8 +29,11 @@
 .gallery__column:nth-child(3) {
 	flex-grow: 2;
 }
+.gallery__column:nth-child(4) {
+    padding-bottom: -2%;
+}
 .gallery__column:nth-child(5){
-    padding-bottom: 15px;
+    padding-bottom: 6%;
 }
 .gallery__img {
     width: 100%;
@@ -39,8 +43,7 @@
 .gallery__img.img--big {
     width: 50%;
 }
-// @media screen and (max-width: 320px) {
-	.gallery__img:hover {
+.gallery__img:hover {
 		animation: scale 600ms ease-out;
 		opacity: .7;
 	}
@@ -82,10 +85,6 @@
 	max-width: 250px; 
 	width: 100%;
 }
-.gallery__img {
-	border-radius: 25px;
-	border: 1px solid white;
-}
 #caption{
 	z-index: 20;
 	margin: auto;
@@ -115,7 +114,7 @@
 	color: #f1f1f1;
 	position: absolute;
 	top: 0;
-	right: 0;
+	right: 40px;
 	font-size: 40px;
 	font-weight: bold;
 	transition: all .3s ease;
