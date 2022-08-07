@@ -437,10 +437,15 @@ address {
 @media screen and (min-width: 768px) {
   .counter-cafe {
     position: absolute;
+    display: flex;
+    flex-direction: column;
     width: 43px;
     height: 44px;
     right: 32px;
     bottom: 280px;
+    background-image: url(../images/hero-header/tab/Ellipse\ 1.png);
+    background-repeat: no-repeat;
+    background-position: right 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -450,12 +455,13 @@ address {
     height: 77px;
     right: 32px;
     bottom: 436px;
+    background-image: url(../images/hero-header/desktp/Ellipse\ 2.png);
+    background-repeat: no-repeat;
+    background-position: right 0;
   }
 }
 
 .number-16 {
-  position: absolute;
-  z-index: 10;
   font-family: "Titan One";
   font-style: normal;
   font-weight: 400;
@@ -473,10 +479,7 @@ address {
 }
 
 .cafes {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  text-align: center;
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 400;
@@ -491,22 +494,6 @@ address {
   }
 }
 
-.circle {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: white;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-}
-@media screen and (min-width: 1200px) {
-  .circle {
-    width: 30px;
-    height: 30px;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .counter-food-trucks {
     display: none;
@@ -515,10 +502,16 @@ address {
 @media screen and (min-width: 768px) {
   .counter-food-trucks {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 51px;
     height: 43px;
     right: 32px;
     bottom: 221px;
+    background-image: url(../images/hero-header/tab/Ellipse\ 1.png);
+    background-repeat: no-repeat;
+    background-position: right 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -528,13 +521,13 @@ address {
     height: 78px;
     right: 32px;
     bottom: 345px;
+    background-image: url(../images/hero-header/desktp/Ellipse\ 2.png);
+    background-repeat: no-repeat;
+    background-position: right 0;
   }
 }
 
 .food-trucks {
-  position: absolute;
-  bottom: 0;
-  left: 0;
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 400;
@@ -550,10 +543,6 @@ address {
 }
 
 .number-23 {
-  position: absolute;
-  z-index: 10;
-  left: 50%;
-  transform: translateX(-50%);
   font-family: "Titan One";
   font-style: normal;
   font-weight: 400;
