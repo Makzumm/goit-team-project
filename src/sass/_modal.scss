@@ -71,16 +71,16 @@ input[type='checkbox'] {
 
 input[type='checkbox'] + label span {
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   margin: -1px 4px 0 0;
   vertical-align: middle;
-  background: url(/src/images/form/ico.png) left top no-repeat;
+  background: url(/src/images/form/c.png) left top no-repeat;
   cursor: pointer;
 }
 
 input[type='checkbox']:checked + label span {
-  background: url(/src/images/form/checked.png) top no-repeat;
+  background: url(/src/images/form/ccheked.png) top no-repeat;
 }
 
 input[type='radio'] {
@@ -89,8 +89,8 @@ input[type='radio'] {
 
 input[type='radio'] + label span {
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   margin: -1px 4px 0 0;
   vertical-align: middle;
   background: url(/src/images/form/r.png) left top no-repeat;
