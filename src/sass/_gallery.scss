@@ -1,7 +1,7 @@
 .section.section__gallery {
     position: relative;
 	padding: 0;
-	margin-top: -25px;
+	margin-top: -7%;
 }
 .container.gallery__container {
 	padding: 0;
@@ -29,8 +29,11 @@
 .gallery__column:nth-child(3) {
 	flex-grow: 2;
 }
+.gallery__column:nth-child(4) {
+    padding-bottom: -2%;
+}
 .gallery__column:nth-child(5){
-    padding-bottom: 15px;
+    padding-bottom: 6%;
 }
 .gallery__img {
     width: 100%;

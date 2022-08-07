@@ -13,7 +13,7 @@ body, ul, li, p, a {
         flex-direction: row;
         flex-wrap: nowrap;
         column-gap: 32px;
-        padding: 0;
+        padding: 0 16px;
     }
 }
 .contacts__office--wrap {
