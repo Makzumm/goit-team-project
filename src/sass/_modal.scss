@@ -16,6 +16,8 @@ body.modal-open {
   opacity: 1;
   transition: opacity 100ms;
 
+  overflow: overlay;
+
   &.is-hidden {
     opacity: 0;
     pointer-events: none;
@@ -43,7 +45,16 @@ body.modal-open {
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(2);
   }
+
+  @media screen and (max-height: 710px) {
+    top: 0%;
+    transform: translate(-50%, 1%) scale(1);
+    .backdrop.is-hidden & {
+      transform: translate(-50%, 0%) scale(2);
+    }
+  }
 }
+
 .modal-order__button {
   position: absolute;
   top: 15px;
@@ -57,6 +68,7 @@ body.modal-open {
 input[type='checkbox'] {
   display: none;
 }
+
 input[type='checkbox'] + label span {
   display: inline-block;
   width: 30px;
@@ -66,6 +78,7 @@ input[type='checkbox'] + label span {
   background: url(/src/images/form/ico.png) left top no-repeat;
   cursor: pointer;
 }
+
 input[type='checkbox']:checked + label span {
   background: url(/src/images/form/checked.png) top no-repeat;
 }
@@ -73,6 +86,7 @@ input[type='checkbox']:checked + label span {
 input[type='radio'] {
   display: none;
 }
+
 input[type='radio'] + label span {
   display: inline-block;
   width: 30px;
@@ -82,6 +96,7 @@ input[type='radio'] + label span {
   background: url(/src/images/form/r.png) left top no-repeat;
   cursor: pointer;
 }
+
 input[type='radio']:checked + label span {
   background: url(/src/images/form/rchecked.png) 0px top no-repeat;
 }
