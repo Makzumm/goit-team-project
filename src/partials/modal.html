@@ -1,0 +1,80 @@
+<div class="backdrop is-hidden" data-backdrop>
+  <div class="modal-order">
+    <form class="modal-order__form">
+      <p class="modal-order__title">Leave your order</p>
+
+      <div class="modal-order__form-field">
+        <label class="modal-order__form-label" for="name">Name</label>
+        <input
+          class="modal-order__form-input"
+          type="text"
+          name="name"
+          id="name"
+          placeholder=" "
+        />
+      </div>
+
+      <div class="modal-order__form-field">
+        <label class="modal-order__form-label" for="tel">Phone number</label>
+        <input
+          class="modal-order__form-input"
+          type="tel"
+          name="tel"
+          id="tel"
+          placeholder=" "
+        />
+      </div>
+
+      <div class="modal-order__form-field">
+        <label class="modal-order__form-label" for="email">E-mail</label>
+        <input
+          class="modal-order__form-input"
+          type="email"
+          name="email"
+          id="email"
+          placeholder=" "
+        />
+      </div>
+
+      <div class="modal-order__form-field">
+        <label class="modal-order__form-label" for="comment">Comment</label>
+        <textarea
+          class="modal-order__form-input modal-order__form-text-area"
+          name="comment"
+          id="comment"
+          placeholder="Enter text here"
+        ></textarea>
+      </div>
+
+      <div class="modal-order__form-field checkboxes">
+        <input type="checkbox" id="c1" name="cc" />
+        <label for="c1"><span></span>Check</label>
+        <input type="checkbox" id="c2" name="cc" />
+        <label for="c2"><span></span>Check</label>
+        <input type="checkbox" id="c3" name="cc" />
+        <label for="c3"><span></span>Check</label>
+      </div>
+
+      <div class="modal-order__form-field radiobuttons">
+        <input type="radio" id="d1" name="dd" />
+        <label for="d1"><span></span>Radio 1</label>
+        <input type="radio" id="d2" name="dd" checked />
+        <label for="d2"><span></span>Radio 2</label>
+      </div>
+
+      <p class="modal-order__form-text">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem,
+        dolorum.
+      </p>
+      <button class="modal-order__confirm-button" type="submit">Confirm</button>
+    </form>
+    <button class="modal-order__button" data-modal-close>
+      <svg class="modal-order__icon" width="20px" height="20px">
+        <use
+          class="modal-order__close"
+          href="./images/sprite.svg#icon-modal"
+        ></use>
+      </svg>
+    </button>
+  </div>
+</div>
