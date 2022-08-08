@@ -2,7 +2,8 @@ body.modal-open {
   overflow: hidden;
 }
 
-.backdrop {
+.backdrop,
+.backdrop-map {
   position: fixed;
   top: 0;
   left: 0;
@@ -24,28 +25,31 @@ body.modal-open {
   }
 }
 
-.modal-order {
+.modal-order,
+.modal-map {
   position: absolute;
   top: 50%;
   left: 50%;
 
-  min-height: 300px;
   min-width: 320px;
-  max-width: 450px;
   width: 90%;
-  padding: 50px 30px 40px;
 
-  border-radius: 20px;
   box-shadow: 0px 0px 30px 4px rgba(0, 0, 0, 0.42);
   background-color: var(--contacts-bg-color);
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform 100ms;
+}
+
+.modal-order {
+  min-height: 300px;
+  max-width: 450px;
+  padding: 50px 30px 40px;
+  border-radius: 20px;
 
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(2);
   }
-
   @media screen and (max-height: 710px) {
     top: 0%;
     transform: translate(-50%, 1%) scale(1);
@@ -55,14 +59,37 @@ body.modal-open {
   }
 }
 
-.modal-order__button {
+.modal-map {
+  min-height: 400px;
+  height: 600px;
+  max-width: 1200px;
+
+  .backdrop-map.is-hidden & {
+    transform: translate(-50%, -50%) scale(2);
+  }
+  @media screen and (max-height: 610px) {
+    top: 0%;
+    transform: translate(-50%, 1%) scale(1);
+    .backdrop-map.is-hidden & {
+      transform: translate(-50%, 0%) scale(2);
+    }
+  }
+}
+
+.modal-order__button,
+.modal-map__button {
   position: absolute;
   top: 15px;
   right: 15px;
   cursor: pointer;
   background-color: transparent;
+  padding: 10px 12px 8px;
   border: none;
-  padding: 10px;
+  border-radius: 50%;
+}
+
+.modal-map__button {
+  background-color: white;
 }
 
 input[type='checkbox'] {
