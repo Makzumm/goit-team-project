@@ -1,8 +1,17 @@
 <section class="container customer-reviews">
+  <h2 class="visually-hidden">Customer reviews</h2>
   <!-- Slideshow container -->
   <div class="container-slider">
     <div class="reviews-slider fade">
-      <img class="reviews-slider__img" src="/src/images/cust-reviews/girl1/reviewer-mob1@1x.png" />
+      <img
+        class="reviews-slider__img"
+        srcset="
+          /src/images/cust-reviews/girl1/reviewer-mob1@1x.png  1x,
+          /src/images/cust-reviews/girl1/reviewer-mob1@2x..png 2x
+        "
+        src="/src/images/cust-reviews/girl1/reviewer-mob1@1x.png"
+        alt="user photo"
+      />
       <div class="container-review">
         <p class="reviews-slider__text">
           Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
@@ -19,7 +28,15 @@
     </div>
 
     <div class="reviews-slider fade">
-      <img class="reviews-slider__img" src="/src/images/cust-reviews/girl2/reviewer-mob2@1x.png" />
+      <img
+        class="reviews-slider__img"
+        srcset="
+          /src/images/cust-reviews/girl2/reviewer-mob2@1x.png 1x,
+          /src/images/cust-reviews/girl2/reviewer-mob2@2x.png 2x
+        "
+        src="/src/images/cust-reviews/girl2/reviewer-mob2@1x.png"
+        alt="user photo"
+      />
       <div class="container-review">
         <p class="reviews-slider__text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, ut?
@@ -32,11 +49,19 @@
         <span class="marker-list__dot"></span>
         <span class="marker-list__dot"></span>
       </div>
-      <p class="reviews-slider__client">Emily, Los Angeles</p>
+      <p class="reviews-slider__client">Jesika, New York</p>
     </div>
 
     <div class="reviews-slider fade">
-      <img class="reviews-slider__img" src="/src/images/cust-reviews/girl3/reviewer-mob3@2x..png" />
+      <img
+        class="reviews-slider__img"
+        srcset="
+          /src/images/cust-reviews/girl3/reviewer-mob3@1x..png 1x,
+          /src/images/cust-reviews/girl3/reviewer-mob3@2x..png 2x
+        "
+        src="/src/images/cust-reviews/girl3/reviewer-mob3@1x..png"
+        alt="user photo"
+      />
       <div class="container-review">
         <p class="reviews-slider__text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, ut?
@@ -49,7 +74,7 @@
         <span class="marker-list__dot"></span>
         <span class="marker-list__dot"></span>
       </div>
-      <p class="reviews-slider__client">Emily, Los Angeles</p>
+      <p class="reviews-slider__client">Anna, Chicago</p>
     </div>
 
     <!-- Next and previous buttons -->
