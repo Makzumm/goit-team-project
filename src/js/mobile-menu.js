@@ -3,12 +3,6 @@
   const mobileMenuRef = document.querySelector('[data-menu]');
   const menuBtnRef = document.querySelector('[data-menu-button]');
 
-  menuItemRef.addEventListener('click', () => {
-    mobileMenuRef.classList.toggle('is-open');
-    document.body.classList.toggle('menu-open');
-    menuBtnRef.classList.toggle('is-open');
-  });
-
   menuBtnRef.addEventListener('click', () => {
     const expanded =
       menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
@@ -18,5 +12,11 @@
 
     mobileMenuRef.classList.toggle('is-open');
     document.body.classList.toggle('menu-open');
+  });
+
+  menuItemRef.addEventListener('click', () => {
+    mobileMenuRef.classList.remove('is-open');
+    document.body.classList.remove('menu-open');
+    menuBtnRef.classList.remove('is-open');
   });
 })();
