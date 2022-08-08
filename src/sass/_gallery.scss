@@ -4,8 +4,7 @@
 	background: #FFFFFF;
 	background: 
 	linear-gradient(
-		180deg, var(--about-bg-color) 16.5%, 
-		rgba(0, 0, 0, 0.25) 16.5%,
+		180deg, var(--about-bg-color) 20.5%, 
 	 	var(--main-white) 20.5% 100%);
 }
 .container.gallery__container {
@@ -48,14 +47,15 @@
     width: 50%;
 }
 .gallery__img:hover {
-		animation: scale 600ms ease-out;
-		opacity: .7;
+		animation: scale 700ms ease-out;
+		animation-fill-mode: forwards;
+		opacity: .9;
 	}
 @keyframes scale {
     25% {transform: scale(1.2)}
     50% {transform: scale(1.35)}
-    75% {transform: scale(1.2)}
-    100% {transform: scale(1)}
+    75% {transform: scale(1.3)}
+    100% {transform: scale(1.2)}
 }
 
 .my__modal{
