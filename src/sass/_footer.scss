@@ -1,14 +1,8 @@
 .footer {
   background-color: var(--contacts-bg-color);
-  padding-top: 1000px;
-  margin-top: -980px;
+  padding-top: 32px;
   @media screen and (min-width: 768px) {
-    padding-top: 280px;
-    margin-top: -225px;
-  }
-  @media screen and (min-width: 1200px) {
-    padding-top: 430px;
-    margin-top: -340px;
+    padding-top: 60px;
   }
 }
 
