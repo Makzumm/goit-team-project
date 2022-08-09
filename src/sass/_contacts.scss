@@ -8,6 +8,29 @@ a {
   margin: 0;
   padding: 0;
 }
+
+.section__contacts {
+  background: linear-gradient(
+    180deg,
+    var(--main-white) 22%,
+    var(--about-bg-color) 22% 100%
+  );
+  @media screen and (min-width: 768px) {
+    background: linear-gradient(
+      180deg,
+      var(--main-white) 56%,
+      var(--about-bg-color) 56% 100%
+    );
+  }
+  @media screen and (min-width: 1200px) {
+    background: linear-gradient(
+      180deg,
+      var(--main-white) 20%,
+      var(--about-bg-color) 20% 100%
+    );
+  }
+}
+
 .container.contacts__container {
   display: flex;
   flex-wrap: wrap;
