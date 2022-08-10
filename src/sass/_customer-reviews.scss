@@ -1,23 +1,14 @@
-// .container {
-//   margin-left: auto;
-//   margin-right: auto;
-//   padding-left: 16px;
-//   padding-right: 16px;
-
-//   @media screen and (min-width: 320px) {
-//     max-width: 767px;
-//   }
-//   @media screen and (min-width: 768px) {
-//     max-width: 768px;
-//   }
-//   @media screen and (min-width: 1200px) {
-//     max-width: 1200px;
-//   }
-// }
-
 .customer-reviews {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 80px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 .container-slider {
@@ -178,7 +169,18 @@
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
+.pagination__dot.active .pagination__ellipse {
+  display: none;
+}
+.pagination__dot.active .pagination__house {
+  display: block;
+}
+.pagination__icon {
+  position: absolute;
+}
+.pagination__house {
+  display: none;
+}
 .active,
 .pagination__dot:hover {
   fill: var(--pagination-dot-red);
