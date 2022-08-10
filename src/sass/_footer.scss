@@ -20,6 +20,13 @@
   border-radius: 22px;
   border: none;
   cursor: pointer;
+  transform: scale(1);
+  transition: transform 250ms;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+  }
 
   @media screen and (max-width: 767px) {
     width: 161px;
@@ -50,6 +57,12 @@
     }
     @media screen and (min-width: 768px) {
       margin: 0px 0px 0px 12px;
+    }
+  }
+  .footer__franchise-item:nth-child(1) & {
+    &:hover,
+    &:focus {
+      background-color: var(--button-red-hover);
     }
   }
 }
@@ -124,9 +137,12 @@
 
 .footer__social-icon {
   fill: var(--subtitle-color);
+  transition: transform 250ms;
+
   .footer__social-link:hover &,
   .footer__social-link:focus & {
     fill: var(--titles-color);
+    transform: scale(1.1);
   }
   @media screen and (min-width: 768px) {
     width: 34px;
