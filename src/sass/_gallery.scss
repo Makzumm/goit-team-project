@@ -23,6 +23,9 @@
     column-gap: 2.5px;
 	width: 100%;
     padding: 0;
+	@media screen and(min-width: 1200px) {
+		width: 1113px;
+	}
 }
 .gallery__column {
     display: flex;
