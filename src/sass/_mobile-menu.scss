@@ -73,6 +73,11 @@ body.menu-open {
 .header-button.is-open {
   margin-left: auto;
   margin-right: 18px;
+  @media screen and (min-width: 1200px) {
+    .header__menu-wrapper.is-open & {
+      display: block;
+    }
+  }
 }
 
 .site-nav-link {
