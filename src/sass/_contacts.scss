@@ -59,6 +59,10 @@ a {
   @media screen and (min-width: 768px) {
     flex-direction: column;
   }
+  @media screen and (min-width: 1200px) {
+    padding: 40px 40px;
+  }
+
 }
 .contacts__office:not(last-of-type) {
   margin-bottom: 20px;
@@ -99,7 +103,7 @@ a {
   @media screen and (min-width: 768px) and (max-width: 1199.9px) {
     width: 73px;
   }
-  @media screen and (min-width: 1200) {
+  @media screen and (min-width: 1200px) {
     width: 75.1px;
   }
 }
@@ -141,7 +145,7 @@ a {
     line-height: 1.66;
     letter-spacing: 0.04em;
   }
-  @media screen and (min-width: 1200) {
+  @media screen and (min-width: 1200px) {
     font-size: 16px;
     line-height: 1.83;
   }
@@ -156,7 +160,7 @@ a {
   @media screen and (min-width: 768px) and (max-width: 1199.9px) {
     font-size: 14px;
   }
-  @media screen and (min-width: 1200) {
+  @media screen and (min-width: 1200px) {
     font-size: 16px;
   }
 }
@@ -170,7 +174,7 @@ a {
   @media screen and (min-width: 768px) and (max-width: 1199.9px) {
     font-size: 14px;
   }
-  @media screen and (min-width: 1200) {
+  @media screen and (min-width: 1200px) {
     font-size: 16px;
   }
 }
@@ -186,7 +190,7 @@ a {
     font-size: 14px;
     line-height: 1.83;
   }
-  @media screen and (min-width: 1200) {
+  @media screen and (min-width: 1200px) {
     font-size: 16px;
     line-height: 1.83;
   }
