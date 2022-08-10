@@ -132,9 +132,16 @@ body.modal-open {
   position: absolute;
   top: 15px;
   right: 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+
   cursor: pointer;
   background-color: transparent;
-  padding: 10px 12px 8px;
   border: none;
   border-radius: 50%;
 }
