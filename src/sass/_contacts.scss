@@ -178,6 +178,9 @@ a {
     font-size: 16px;
   }
 }
+.schedule-time--gap:last-child  {
+  padding-top: 12px;
+}
 .contacts--phone,
 .contacts--email {
   font-family: 'DM Sans';
@@ -200,4 +203,83 @@ a {
 .contacts--phone:hover,
 .contacts--email:hover {
   color: #d41443;
+}
+.contact__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  padding: 0px 17px;
+  color: var(--main-white);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  background: var(--red-color);
+  border-radius: 22px;
+  border: none;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 250ms;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 161px;
+  }
+
+  @media screen and (min-width: 768px) {
+    min-width: 174px;
+    width: 100%;
+    padding: 0px 34px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 168px;
+    padding: 0px 36px;
+    height: 45px;
+  }
+
+  .contact__franchise-item:nth-child(2) & {
+    margin: 10px 0px 0px 0px;
+    background: var(--main-white);
+    color: var(--red-color);
+    &:hover,
+    &:focus {
+      background-color: #ecebeb;
+    }
+    @media screen and (min-width: 768px) {
+      margin: 0px 0px 0px 15px;
+    }
+    @media screen and (min-width: 768px) {
+      margin: 0px 0px 0px 12px;
+    }
+  }
+  .contact__franchise-item:nth-child(1) & {
+    &:hover,
+    &:focus {
+      background-color: var(--button-red-hover);
+    }
+  }
+}
+
+.contact__franchise-icon {
+  margin: 0px 0px 0px 12px;
+}
+
+.contact__franchise-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 0px 40px 0px;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+    padding: 60px 0px 40px 0px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 60px 0px 120px 0px;
+  }
 }
