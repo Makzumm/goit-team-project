@@ -1,7 +1,9 @@
 .up-button {
   position: fixed;
-  bottom: 45px;
-  right: 45px;
+
+  bottom: 0;
+  right: 0;
+  transform: translate(-45px, -45px) scale(1);
 
   width: 60px;
   height: 60px;
@@ -15,13 +17,13 @@
   cursor: pointer;
 
   z-index: 99;
-  display: none; /* Hidden by default */
+  opacity: 0;
 
-  transition: transform 250ms linear;
+  transition: transform 250ms linear, opacity 250ms linear;
 }
 
 .up-button:hover {
-  transform: scale(1.5);
+  transform: translate(-45px, -45px) scale(1.5);
 }
 
 .up-button__icon {
