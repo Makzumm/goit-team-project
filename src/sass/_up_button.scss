@@ -1,0 +1,30 @@
+.up-button {
+  position: fixed;
+  bottom: 45px;
+  right: 45px;
+
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: transparent;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  display: none; /* Hidden by default */
+
+  transition: transform 250ms linear;
+}
+
+.up-button:hover {
+  transform: scale(1.5);
+}
+
+.up-button__icon {
+  fill: var(--red-color);
+  width: 100%;
+  height: 100%;
+}
