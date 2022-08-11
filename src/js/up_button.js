@@ -11,9 +11,11 @@ function scrollFunction() {
     document.body.scrollTop > 1500 ||
     document.documentElement.scrollTop > 1500
   ) {
-    mybutton.style.display = 'block';
+    // mybutton.style.display = 'block';
+    mybutton.style.opacity = 1;
   } else {
-    mybutton.style.display = 'none';
+    // mybutton.style.display = 'none';
+    mybutton.style.opacity = 0;
   }
 }
 
