@@ -12,10 +12,12 @@ function scrollFunction() {
     document.documentElement.scrollTop > 1500
   ) {
     // mybutton.style.display = 'block';
-    mybutton.style.opacity = 1;
+    mybutton.style.opacity = 0.5;
+    mybutton.style.visibility = 'visible';
   } else {
     // mybutton.style.display = 'none';
     mybutton.style.opacity = 0;
+    mybutton.style.visibility = 'hidden';
   }
 }
 
