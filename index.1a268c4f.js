@@ -1,0 +1,2 @@
+var slideIndex=1;function plusSlides(e){showSlides(slideIndex+=e)}function currentSlide(e){showSlides(slideIndex=e)}function showSlides(e){var s,l=document.getElementsByClassName("reviews-slider"),d=document.getElementsByClassName("pagination__dot");for(e>l.length&&(slideIndex=1),e<1&&(slideIndex=l.length),s=0;s<l.length;s++)l[s].style.display="none";for(s=0;s<d.length;s++)d[s].className=d[s].className.replace(" active","");l[slideIndex-1].style.display="flex",d[slideIndex-1].className+=" active"}showSlides(slideIndex);
+//# sourceMappingURL=index.1a268c4f.js.map
