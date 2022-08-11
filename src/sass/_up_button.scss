@@ -14,6 +14,7 @@
   align-items: center;
   cursor: pointer;
 
+  z-index: 99;
   display: none; /* Hidden by default */
 
   transition: transform 250ms linear;
