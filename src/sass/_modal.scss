@@ -257,4 +257,5 @@ input[type='radio']:checked + label span {
   background: var(--red-color);
   border-radius: 22px;
   border: none;
+  cursor: pointer;
 }
