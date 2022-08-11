@@ -6,11 +6,11 @@
           <use href="./images/sprite.svg#icon-logo"></use>
         </svg>
       </a>
-      <div class="header__menu-wrapper" data-menu id="menu-container">
+      <div class="header__menu-wrapper" data-menu>
         <button
           class="header-button"
           data-menu-button
-          type="button"
+          type="menu"
           aria-expanded="false"
           aria-controls="menu-container"
         >
@@ -27,7 +27,7 @@
         </button>
         <ul class="site-nav" data-menu-item>
           <li class="site-nav-item">
-            <a class="site-nav-link" href="#hero">Home</a>
+            <a class="site-nav-link" href="./index.html">Home</a>
           </li>
           <li class="site-nav-item">
             <a class="site-nav-link" href="#customer-reviews">About us</a>
@@ -53,3 +53,5 @@
     </nav>
   </div>
 </header>
+
+<include src="./partials/mobile-menu.html"></include>
