@@ -155,8 +155,20 @@ iframe {
   border-radius: 50%;
 }
 
+.modal-order__button,
+.modal-about__button {
+  &:hover,
+  &:focus {
+    background-color: var(--main-white);
+  }
+}
+
 .modal-map__button {
-  background-color: white;
+  background-color: var(--main-white);
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
 }
 
 input[type='checkbox'] {
