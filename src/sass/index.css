@@ -158,6 +158,8 @@ address {
   line-height: 1.31;
   color: var(--red-color);
   transition: background-color 250ms, transform 250ms;
+  -webkit-animation: glowing 1500ms infinite;
+          animation: glowing 1500ms infinite;
   cursor: pointer;
 }
 .button-buy:hover, .button-buy:focus {
@@ -178,6 +180,65 @@ address {
   }
 }
 
+@-webkit-keyframes glowing {
+  0% {
+    box-shadow: 0 0 5px #D41443;
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 20px #FFB8CA;
+    transform: scale(1.05);
+  }
+  100% {
+    box-shadow: 0 0 5px #D41443;
+    transform: scale(1);
+  }
+}
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 5px #D41443;
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 20px #FFB8CA;
+    transform: scale(1.05);
+  }
+  100% {
+    box-shadow: 0 0 5px #D41443;
+    transform: scale(1);
+  }
+}
+@media screen and (min-width: 768px) {
+  @-webkit-keyframes glowing {
+    0% {
+      box-shadow: 0 0 5px #FFB8CA;
+      transform: scale(1);
+    }
+    50% {
+      box-shadow: 0 0 20px #D41443;
+      transform: scale(1.05);
+    }
+    100% {
+      box-shadow: 0 0 5px #FFB8CA;
+      transform: scale(1);
+    }
+  }
+  @keyframes glowing {
+    0% {
+      box-shadow: 0 0 5px #FFB8CA;
+      transform: scale(1);
+    }
+    50% {
+      box-shadow: 0 0 20px #D41443;
+      transform: scale(1.05);
+    }
+    100% {
+      box-shadow: 0 0 5px #FFB8CA;
+      transform: scale(1);
+    }
+  }
+}
 .site-nav {
   display: none;
 }
