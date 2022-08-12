@@ -1,24 +1,11 @@
 .up-button {
-  @media screen and (min-width: 200px) and (max-width: 767px) {
-    transform: translate(0px, 05px) scale(1);
-    width: 35px;
-    height: 35px;
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    display: block;
-    transform: translate(-5px, -5px) scale(1);
-    width: 45px;
-    height: 45px;
-  }
   position: fixed;
 
   bottom: 0;
   right: 0;
-  transform: translate(-40px, -40px) scale(1);
-
-  width: 60px;
-  height: 60px;
+  transform: translate(0px, 0px) scale(1);
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   background-color: transparent;
   border: transparent;
@@ -30,26 +17,37 @@
 
   z-index: 99;
   opacity: 0;
+  visibility: hidden;
 
   transition: transform 250ms linear, opacity 250ms linear,
     visibility 250ms linear;
-}
 
-.up-button:hover {
-  @media screen and (min-width: 200px) and (max-width: 767px) {
-    transform: translate(0px, 05px) scale(1);
-    width: 35px;
-    height: 35px;
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) {
     transform: translate(-5px, -5px) scale(1);
     width: 45px;
     height: 45px;
   }
 
-  transform: translate(-40px, -40px) scale(1.5);
-  opacity: 1;
+  @media screen and (min-width: 1200px) {
+    transform: translate(-40px, -40px) scale(1);
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.up-button:hover {
+  opacity: 0.5;
+
+  transform: translate(0px, 0px) scale(1.3);
+
+  @media screen and (min-width: 768px) {
+    transform: translate(-5px, -5px) scale(1.5);
+  }
+
+  @media screen and (min-width: 1200px) {
+    transform: translate(-40px, -40px) scale(1.5);
+    opacity: 0.5;
+  }
 }
 
 .up-button__icon {

@@ -8,8 +8,8 @@ window.onscroll = function () {
 
 function scrollFunction() {
   if (
-    document.body.scrollTop > 1500 ||
-    document.documentElement.scrollTop > 1500
+    document.body.scrollTop > 1200 ||
+    document.documentElement.scrollTop > 1200
   ) {
     // mybutton.style.display = 'block';
     mybutton.style.opacity = 0.5;
