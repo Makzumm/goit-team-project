@@ -1,4 +1,6 @@
 .up-button {
+  -webkit-appearance: none;
+
   position: fixed;
 
   bottom: 0;
@@ -15,7 +17,6 @@
   align-items: center;
   cursor: pointer;
 
-  z-index: 99;
   opacity: 0;
   visibility: hidden;
 
