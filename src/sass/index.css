@@ -157,10 +157,12 @@ address {
   font-size: 16px;
   line-height: 1.31;
   color: var(--red-color);
+  transition: background-color 250ms, transform 250ms;
   cursor: pointer;
 }
 .button-buy:hover, .button-buy:focus {
   background-color: #ecebeb;
+  transform: scale(1.05);
 }
 @media screen and (min-width: 768px) {
   .button-buy {
@@ -185,11 +187,16 @@ address {
     align-items: center;
     position: relative;
     z-index: 3;
+    transition: transform 250ms;
   }
 }
 
 .site-nav-item:not(:last-child) {
   margin-right: 35px;
+}
+
+.site-nav-item:hover {
+  transform: scale(1.05);
 }
 
 .site-nav-link {
@@ -199,11 +206,35 @@ address {
   color: var(--main-white);
   padding-top: 10px;
   padding-bottom: 10px;
+  transition: color 250ms;
 }
 .site-nav-link:hover, .site-nav-link:focus {
   color: var(--red-color);
+  -webkit-mask-size: 200%;
+          mask-size: 200%;
+  mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.6) 30%, #000 50%, rgba(0, 0, 0, 0.6) 70%);
+  -webkit-mask-image: -webkit-linear-gradient(-75deg, rgba(0, 0, 0, 0.6) 30%, #000 50%, rgba(0, 0, 0, 0.6) 70%);
+  -webkit-animation: wave 2s infinite;
+          animation: wave 2s infinite;
 }
 
+@-webkit-keyframes wave {
+  from {
+    -webkit-mask-position: 150%;
+  }
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+
+@keyframes wave {
+  from {
+    -webkit-mask-position: 150%;
+  }
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
 .header__menu-wrapper {
   display: flex;
 }
@@ -422,6 +453,10 @@ address {
   font-size: 8px;
   line-height: 1.25;
   margin-right: 8px;
+  transition: transform 250ms;
+}
+.button-products:hover, .button-products:focus {
+  transform: scale(1.05);
 }
 @media screen and (min-width: 1200px) {
   .button-products {
@@ -445,9 +480,11 @@ address {
   font-weight: 400;
   font-size: 8px;
   line-height: 1.25;
+  transition: background-color 250ms, transform 250ms;
 }
 .button-how-its-made:hover, .button-how-its-made:focus {
   background-color: #ECEBEB;
+  transform: scale(1.05);
 }
 @media screen and (min-width: 1200px) {
   .button-how-its-made {
@@ -718,6 +755,10 @@ address {
   width: 18px;
   height: 18px;
   cursor: pointer;
+  transition: transform 250ms;
+}
+.buttom-lorem:hover, .buttom-lorem:focus {
+  transform: scale(1.5);
 }
 @media screen and (min-width: 1200px) {
   .buttom-lorem {

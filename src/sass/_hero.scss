@@ -90,6 +90,11 @@
     font-size: 8px;
     line-height: 1.25;
     margin-right: 8px;
+    transition: transform 250ms;
+
+    &:hover, &:focus {
+        transform: scale(1.05);
+    }
 
     @media screen and (min-width: 1200px) {
         width: 107px;
@@ -112,9 +117,11 @@
     font-weight: 400;
     font-size: 8px;
     line-height: 1.25;
+    transition: background-color 250ms, transform 250ms;
 
     &:hover, &:focus {
             background-color: #ECEBEB;
+            transform: scale(1.05);
         }
 
     @media screen and (min-width: 1200px) {
@@ -377,7 +384,11 @@
     width: 18px;
     height: 18px;
     cursor: pointer;
+    transition: transform 250ms;
 
+    &:hover, &:focus {
+        transform: scale(1.5);
+    }
     @media screen and (min-width: 1200px) {
         width: 26px;
         height: 26px;
