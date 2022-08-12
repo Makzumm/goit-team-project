@@ -44,7 +44,7 @@
   line-height: 1.31;
   color: var(--red-color);
   transition: background-color 250ms, transform 250ms;
-
+  animation: glowing 1500ms infinite;
   cursor: pointer;
 
   &:hover,
@@ -62,6 +62,30 @@
     margin: 0px 0px 0px 141px;
   }
 }
+
+@keyframes glowing{
+  0% {box-shadow: 0 0 5px #D41443;}
+  50% {box-shadow: 0 0 20px #FFB8CA;}
+  100% {box-shadow: 0 0 5px #D41443;}  
+}
+
+@media screen and (min-width: 768px) {
+  @keyframes glowing {
+      0% {
+        box-shadow: 0 0 5px #FFB8CA;
+      }
+  
+      50% {
+        box-shadow: 0 0 20px #D41443;
+      }
+  
+      100% {
+        box-shadow: 0 0 5px #FFB8CA;
+      }
+    }
+}
+
+
 
 .site-nav {
   display: none;
