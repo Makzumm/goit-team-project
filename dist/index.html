@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page title</title>
+    <link rel="shortcut icon" href="/favicon.be4b0254.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/index.b07a87f3.css">
+    <script src="/index.975ef6c8.js" defer=""></script>
+  </head>
+  <body>
+    <!-- ❗️❗️❗️ Add partials like so for every page -->
+    <header class="header">
+  <div class="container header-container">
+    <nav class="header-nav">
+      <a href="/index.html">
+        <svg class="icon-logo" width="199px" height="50px">
+          <use href="/sprite.f14d31f7.svg#icon-logo"></use>
+        </svg>
+      </a>
+      <button class="header-button" data-menu-button="" type="menu" aria-expanded="false" aria-controls="menu-container">
+        <svg class="icon-burger" width="20px" height="20px">
+          <use class="icon-burger-open" href="/sprite.f14d31f7.svg#icon-burger"></use>
+          <use class="icon-burger-close" href="/sprite.f14d31f7.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="site-nav" data-menu="">
+        <li class="site-nav-item">
+          <a class="site-nav-link curent" href="/index.html">Home</a>
+        </li>
+        <li class="site-nav-item">
+          <a class="site-nav-link" href="">About us</a>
+        </li>
+        <li class="site-nav-item">
+          <a class="site-nav-link" href="#about">How it's made?</a>
+        </li>
+        <li class="site-nav-item">
+          <a class="site-nav-link" href="#products">Our products</a>
+        </li>
+        <li class="site-nav-item">
+          <a class="site-nav-link" href="#section__contacts">Contact</a>
+        </li>
+      </ul>
+
+      <button class="button-buy" type="button" data-modal-open="">
+        Buy now
+        <svg width="4px" height="8px">
+          <use href="/sprite.f14d31f7.svg#ForBuyNow"></use>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+
+
+    <main>
+      <section class="hero">
+    <div class="container hero-container">
+        <h1 class="hero-title">ice cream<br>made with<br><span class="hero-title_barnd">passion</span></h1>
+        <ul class="hero-button-list">
+            <li><a class="button-products" href="#products">Products</a></li>
+            <li><a class="button-how-its-made" href="#about">How it's made?</a></li>
+        </ul>
+        <div class="hero-lorem">
+            <p class="hero-lorem-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore et</p>
+            <button type="button" class="buttom-lorem"><svg class="lorem-button-icon" width="8px" height="8px"><use href="/sprite.f14d31f7.svg#icon-arrow-right2"></use></svg></button>
+        </div>
+
+        <div class="hero-circle">
+            <picture>
+                <source media="(max-width: 767px)" srcset="/hero-ice-mob1@1x.9827a309.png 1x, /hero-ice-mob@2x.ad4a1f70.png 2x">
+                <source media="(min-width: 1200px)" srcset="/hero-ice-desktp@1x.1f388871.png 1x, /hero-ice-desktp@2x.8af5130e.png 2x">
+                <source media="(min-width: 768px)" srcset="/hero-ice-tab@1x.dd270d3f.png 1x, /hero-ice-tab@2x.3cbad636.png 2x">
+                <img class="hero-icecream" src="/hero-ice-mob1@1x.9827a309.png" alt="мороженое">
+            </picture>
+        </div>
+        <picture>
+            <source media="(min-width: 1200px)" srcset="/hero-milk-desktp@1x.dcd614ec.png 1x, /hero-milk-desktp@2x.cadd4de7.png 2x">
+            <source media="(min-width: 768px)" srcset="/hero-milk-tab@1x.814e2fd5.png 1x, /hero-milk-tab@2x.45eec3d4.png 2x">
+            <img class="hero-milk-icon" src="/hero-milk-tab@1x.814e2fd5.png" alt="молоко">
+        </picture>
+        <picture>
+            <source media="(min-width: 1200px)" srcset="/hero-girl-desktp@1x.f117d72f.png 1x, /hero-girl-desktp@2x.89de491d.png 2x">
+            <source media="(min-width: 768px)" srcset="/hero-girl-tab@1x.0d73f21c.png 1x, /hero-girl-tab@2x.4bf0433c.png 2x">
+            <img class="hero-girl-icon" src="/hero-girl-tab@1x.0d73f21c.png" alt="молоко">
+        </picture>
+        <div class="counter-cafe"><span class="number-16">16</span><span class="cafes">cafes</span></div>
+        <div class="counter-food-trucks"><span class="number-23">23</span><span class="food-trucks">food trucks</span></div>
+        
+    </div>
+    
+</section>
+      <section class="products-section" id="products">
+  <div class="container">
+    <p class="products-section__subtitle">100% natural</p>
+    <h2 class="products-section__title">products</h2>
+    <ul class="products-section__list">
+      <li class="products-section__item">
+        <div class="front products-section__item--first">
+          <h3 class="products-section__title-inner">ice cream</h3>
+          <div class="products-section__pseudo-element">
+            <span class="products-section__pseudo-element-inner"></span>
+          </div>
+
+          <p class="products-section__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et. dolore magna aliqua
+            facilisis.
+          </p>
+          <button class="products-section__button" type="button">
+            <svg class="products-section__icon">
+              <use href="/sprite.f14d31f7.svg#icon-arrow-right2"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="back products-section__item--first">
+          <div class="products-section__munu-wrap">
+            <p class="products-section__text products-section__text--back">
+              Name:
+            </p>
+
+            <p class="products-section__text products-section__text--back">
+              Price:
+            </p>
+          </div>
+
+          <div class="products-section__munu-wrap">
+            <p class="products-section__text products-section__text--back">
+              Name:
+            </p>
+            <p class="products-section__text products-section__text--back">
+              Price:
+            </p>
+          </div>
+          <div class="products-section__munu-wrap">
+            <p class="products-section__text products-section__text--back">
+              Name:
+            </p>
+            <p class="products-section__text products-section__text--back">
+              Price:
+            </p>
+          </div>
+          <div class="products-section__munu-wrap">
+            <p class="products-section__text products-section__text--back">
+              Name:
+            </p>
+            <p class="products-section__text products-section__text--back">
+              Price:
+            </p>
+          </div>
+          <button class="products-section__button" type="button">
+            <svg class="products-section__icon">
+              <use href="/sprite.f14d31f7.svg#icon-arrow-left2"></use>
+            </svg>
+          </button>
+        </div>
+      </li>
+
+      <li class="products-section__item">
+        <div class="front products-section__item--second">
+          <h3 class="products-section__title-inner">ice coffee</h3>
+          <div class="products-section__pseudo-element">
+            <span class="products-section__pseudo-element-inner"></span>
+          </div>
+
+          <p class="products-section__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et. dolore magna aliqua
+            facilisis.
+          </p>
+          <button class="products-section__button" type="button">
+            <svg class="products-section__icon">
+              <use href="/sprite.f14d31f7.svg#icon-arrow-right2"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="back products-section__item--second">
+          <div class="products-section__munu-wrap">
+            <p class="products-section__text products-section__text--back">
+              Name:<br>Russian death
+            </p>
+
+            <p class="products-section__text products-section__text--back">
+              Price:<br> 12$
+            </p>
+          </div>
+
+          <div class="products-section__munu-wrap">
+            <p class="products-section__text products-section__text--back">
+              Name:<br>--Bayraktar--
+
+            </p>
+            <p class="products-section__text products-section__text--back">
+              Price:<br> 15$
+            </p>
+          </div>
+          <div class="products-section__munu-wrap">
+            <p class="products-section__text products-section__text--back">
+              Name:<br>Glory to Ukraine
+            </p>
+            <p class="products-section__text products-section__text--back">
+              Price:<br> 25$
+            </p>
+          </div>
+          <div class="products-section__munu-wrap">
+            <p class="products-section__text products-section__text--back">
+              Name:<br>Tears of russia
+            </p>
+            <p class="products-section__text products-section__text--back">
+              Price:<br> 10$
+            </p>
+          </div>
+          <button class="products-section__button" type="button">
+            <svg class="products-section__icon">
+              <use href="/sprite.f14d31f7.svg#icon-arrow-left2"></use>
+            </svg>
+          </button>
+        </div>
+      </li>
+      <li class="products-section__item">
+        <div class="front products-section__item--third">
+          <h3 class="products-section__title-inner">milkshakes</h3>
+
+          <div class="products-section__pseudo-element">
+            <span class="products-section__pseudo-element-inner"></span>
+          </div>
+
+          <p class="products-section__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et. dolore magna aliqua
+            facilisis.
+          </p>
+          <button class="products-section__button" type="button">
+            <svg class="products-section__icon">
+              <use href="/sprite.f14d31f7.svg#icon-arrow-right2"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="back products-section__item--third">
+          <div class="products-section__munu-wrap">
+            <p class="products-section__text products-section__text--back">
+              Name:
+            </p>
+
+            <p class="products-section__text products-section__text--back">
+              Price:
+            </p>
+          </div>
+
+          <div class="products-section__munu-wrap">
+            <p class="products-section__text products-section__text--back">
+              Name:
+            </p>
+            <p class="products-section__text products-section__text--back">
+              Price:
+            </p>
+          </div>
+          <div class="products-section__munu-wrap">
+            <p class="products-section__text products-section__text--back">
+              Name:
+            </p>
+            <p class="products-section__text products-section__text--back">
+              Price:
+            </p>
+          </div>
+          <div class="products-section__munu-wrap">
+            <p class="products-section__text products-section__text--back">
+              Name:
+            </p>
+            <p class="products-section__text products-section__text--back">
+              Price:
+            </p>
+          </div>
+          <button class="products-section__button" type="button">
+            <svg class="products-section__icon">
+              <use href="/sprite.f14d31f7.svg#icon-arrow-left2"></use>
+            </svg>
+          </button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="about" id="about">
+    <div class="about-container">
+        <div class="container">
+
+            <span class="about__span">tradition and love</span>
+            <h2 class="about__title">How it`s made?</h2>
+            <div class="about__content">
+                <picture data-aos="zoom-in-up" data-aos-delay="300">
+                    <source media="(min-width: 1200px)" srcset="/about-cow-desktp@1x.b30f7cf4.png 1x
+                            ./images/about/desktp/about-cow-desktp@2x.png 2x">
+                    <source media="(min-width: 768px) and (max-width: 1199px)" srcset="/about-cow-tab@1x.858ea020.png 1x, /about-cow-tab@2x.ca70a681.png 2x">
+                    <source media="(max-width: 767px)" srcset="/about-cow-mob@1x.2e355e81.png 1x, /about-cow-mob@2x.02133e3a.png 2x">
+                    <img src="/about-cow-desktp@1x.b30f7cf4.png" alt="cow image" class="about__img">
+                </picture>
+                <div class="about__text-thumb">
+                    <p class="about__text">
+                        Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem
+                        eget, egestas eros.Maecenas eleifend erat at justo fringilla.
+                    </p>
+                    <p class="about__description">
+                        Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in
+                        imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus.
+                        Cras massa nibh, tincidunt.
+                        <br>
+                        <br>
+                        Aliquam erat volutpat. Aenean accumsan.
+                    </p>
+                    <button type="button" class="button about__button" data-aos="flip-left" data-aos-delay="300">Read
+                        more</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+      <section class="advantages" id="advantages">
+    <div class="container">
+       
+        <h2 class="visually-hidden">advantages</h2>
+        <ul class="advantages__list list">
+            <li class=" advantages__item">
+                <span class=" advantages__span advantages__span-milk" data-aos="zoom-in" data-aos-delay="300">721</span>
+                <p class="advantages__description">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+            </li>
+            <li class=" advantages__item">
+                <span class=" advantages__span advantages__span-apple" data-aos="zoom-in" data-aos-delay="300">16kg</span>
+                <p class="advantages__description">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+            </li>
+            <li class=" advantages__item">
+                <span class=" advantages__span advantages__span-heart" data-aos="zoom-in" data-aos-delay="300">84</span>
+                <p class="advantages__description">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+            </li>
+        </ul>
+        
+    </div>
+</section>
+      <section class="section section__gallery" id="section__gallery">
+  <div class="container gallery__container">
+    <ul class="gallery__list">
+      <li class="gallery__column">
+        <img class="gallery__img" src="/galary_1_1x.866f3851.jpg" alt="picture 1">
+      </li>
+      <li class="gallery__column">
+        <img class="gallery__img" src="/galary_2_1x.366f8b68.jpg" alt="picture 2">
+        <img class="gallery__img" src="/galary_3_1x.89ba1244.jpg" alt="picture 3">
+      </li>
+      <li class="gallery__column">
+        <img class="gallery__img" src="/galary_4_1x.79b62a58.jpg" alt="picture 4">
+        <img class="gallery__img img--big" src="/galary_5_1x.2cb52c40.jpg" alt="picture 5">
+      </li>
+      <li class="gallery__column">
+        <img class="gallery__img" src="/galary_6_1x.cd917854.jpg" alt="picture 6">
+        <img class="gallery__img" src="/galary_7_1x.f6a10989.jpg" alt="picture 7">
+      </li>
+      <li class="gallery__column">
+        <img class="gallery__img" src="/galary_8_1x.4aa28c7c.jpg" alt="picture 8">
+        <img class="gallery__img" src="/galary_9_1x.e1468a17.jpg" alt="picture 9">
+      </li>
+      <li class="gallery__column">
+        <img class="gallery__img" src="/galary_10_1x.6c2649af.jpg" alt="picture 10">
+      </li>
+    </ul>
+  </div>
+</section>
+<div id="my__modal" class="my__modal">
+  <div class="close_btn--wrap">
+    <span class="close" id="close">&times;</span>
+    <div class="modal__block" id="modal__block">
+      <img id="img01" class="modal__content" alt="">
+      <div id="caption"></div>
+    </div>
+  </div>
+</div>
+<script src="/index.11602242.js"></script>
+
+      
+      <section class="section section__contacts" id="section__contacts">
+  <div class="container contacts__container">
+    <h2 class="contacts__title">Our contacts</h2>
+    <div class="contacts__office--wrap">
+      <ul class="contacts__office">
+        <li class="contacts__item contacts__item--name-office">
+          <div class="contacts__item-wrap cafe">CAFE</div>
+          <h4 class="contacts__item-title">Chicago</h4>
+          <p class="contacts__description contacts__description--place">
+            Fusce ut velit laoreet, tempus arcu molestie vulputate
+          </p>
+        </li>
+        <li class="contacts__item contacts__item--schedule">
+          <ul>
+            <li>
+              <p class="contacts__description--working-days">Monday - Friday</p>
+              <p class="contacts__description contacts__description--working-time">
+                06:00 AM - 10:00 PM
+              </p>
+            </li>
+            <li>
+              <p class="contacts__description--working-days">
+                Saturday - Sunday
+              </p>
+              <p class="contacts__description contacts__description--working-time">
+                08:00 AM - 16:00 PM
+              </p>
+            </li>
+          </ul>
+        </li>
+        <li class="contacts__item">
+          <p class="contacts__description contacts__description--phone">
+            <a class="contacts--phone" href="tel:610383766284">+61(0) 383 766 284</a>
+          </p>
+          <p class="contacts__description contacts__description--email">
+            <a class="contacts--email" href="mailto:noreply@envato.com">noreply@envato.com</a>
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="contacts__office--wrap">
+      <ul class="contacts__office">
+        <li class="contacts__item contacts__item--name-office">
+          <div class="contacts__item-wrap foodtruck">FOODTRUCK</div>
+          <h4 class="contacts__item-title">Los Angeles</h4>
+          <p class="contacts__description contacts__description--place">
+            Fusce ut velit laoreet, tempus arcu molestie vulputate
+          </p>
+        </li>
+        <li class="contacts__item contacts__item--schedule">
+          <ul>
+            <li>
+              <p class="contacts__description--working-days">Monday - Friday</p>
+              <p class="contacts__description contacts__description--working-time">
+                06:00 AM - 10:00 PM
+              </p>
+            </li>
+            <li>
+              <p class="contacts__description--working-days">
+                Saturday - Sunday
+              </p>
+              <p class="contacts__description contacts__description--working-time">
+                08:00 AM - 16:00 PM
+              </p>
+            </li>
+          </ul>
+        </li>
+        <li class="contacts__item">
+          <p class="contacts__description contacts__description--phone">
+            <a class="contacts--phone" href="tel:610383766284">+61(0) 383 766 284</a>
+          </p>
+          <p class="contacts__description contacts__description--email">
+            <a class="contacts--email" href="mailto:noreply@envato.com">noreply@envato.com</a>
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="contacts__office--wrap">
+      <ul class="contacts__office">
+        <li class="contacts__item contacts__item--name-office">
+          <div class="contacts__item-wrap cafe">CAFE</div>
+          <h4 class="contacts__item-title">Chicago</h4>
+          <p class="contacts__description contacts__description--place">
+            Fusce ut velit laoreet, tempus arcu molestie vulputate
+          </p>
+        </li>
+        <li class="contacts__item contacts__item--schedule">
+          <ul>
+            <li>
+              <p class="contacts__description--working-days">Monday - Friday</p>
+              <p class="contacts__description contacts__description--working-time">
+                06:00 AM - 10:00 PM
+              </p>
+            </li>
+            <li>
+              <p class="contacts__description--working-days">
+                Saturday - Sunday
+              </p>
+              <p class="contacts__description contacts__description--working-time">
+                08:00 AM - 16:00 PM
+              </p>
+            </li>
+          </ul>
+        </li>
+        <li class="contacts__item">
+          <p class="contacts__description contacts__description--phone">
+            <a class="contacts--phone" href="tel:610383766284">+61(0) 383 766 284</a>
+          </p>
+          <p class="contacts__description contacts__description--email">
+            <a class="contacts--email" href="mailto:noreply@envato.com">noreply@envato.com</a>
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="footer footer__section">
+  <div class="container footer__container">
+    <ul class="footer__franchise-list">
+      <li class="footer__franchise-item">
+        <button type="button" class="footer__button footer__franchise-link" data-modal-map-open="">
+          Our Locations<svg class="footer__franchise-icon" width="4px" height="8px">
+            <use href="/sprite.f14d31f7.svg#foo"></use>
+          </svg>
+        </button>
+      </li>
+      <li class="footer__franchise-item">
+        <button type="button" class="footer__button footer__franchise-link" data-modal-map-open="">
+          Franchise<svg class="footer__franchise-icon" width="4px" height="8px">
+            <use href="/sprite.f14d31f7.svg#ForBuyNow"></use>
+          </svg>
+        </button>
+      </li>
+    </ul>
+
+    <div class="footer__inner">
+      <div class="footer__tagline">
+        <p class="footer__tagline-text">homemade ice cream made</p>
+        <p class="footer__tagline-text">with passion</p>
+      </div>
+
+      <address class="footer__address">
+        <ul class="footer__socials">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://github.com/" target="_blank">
+              <svg class="footer__social-icon" width="32px" height="32px" aria-label="Github">
+                <use href="/sprite.f14d31f7.svg#icon-github"></use></svg></a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://web.telegram.org/" target="_blank">
+              <svg class="footer__social-icon" width="32px" height="32px" aria-label="Telegram">
+                <use href="/sprite.f14d31f7.svg#icon-telegram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://www.facebook.com/" target="_blank">
+              <svg class="footer__social-icon" width="32px" height="32px" aria-label="Facebook">
+                <use href="/sprite.f14d31f7.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="footer__phone-number">
+          <p class="footer__tel footer__address-text">Feel free to contact</p>
+          <a class="footer__tel footer__adress-link" href="tel:+610383766284">+61 (0) 383 766 284</a>
+        </div>
+      </address>
+    </div>
+    <div class="footer__copy">
+      <p class="footer__copy-text">© 2022 - IceCream.</p>
+      <p class="footer__copy-text">All Rights Reserved.</p>
+    </div>
+  </div>
+</section>
+
+      <div class="backdrop is-hidden" data-backdrop="">
+  <div class="modal-order">
+    <form class="modal-order__form">
+      <p class="modal-order__title">Leave your order</p>
+
+      <div class="modal-order__form-field">
+        <label class="modal-order__form-label" for="name">Name</label>
+        <input class="modal-order__form-input" type="text" name="name" id="name" placeholder=" ">
+      </div>
+
+      <div class="modal-order__form-field">
+        <label class="modal-order__form-label" for="tel">Phone number</label>
+        <input class="modal-order__form-input" type="tel" name="tel" id="tel" placeholder=" ">
+      </div>
+
+      <div class="modal-order__form-field">
+        <label class="modal-order__form-label" for="email">E-mail</label>
+        <input class="modal-order__form-input" type="email" name="email" id="email" placeholder=" ">
+      </div>
+
+      <div class="modal-order__form-field">
+        <label class="modal-order__form-label" for="comment">Comment</label>
+        <textarea class="modal-order__form-input modal-order__form-text-area" name="comment" id="comment" placeholder="Enter text here"></textarea>
+      </div>
+
+      <div class="modal-order__form-field checkboxes">
+        <input type="checkbox" id="c1" name="cc">
+        <label for="c1"><span></span>Check</label>
+        <input type="checkbox" id="c2" name="cc">
+        <label for="c2"><span></span>Check</label>
+        <input type="checkbox" id="c3" name="cc">
+        <label for="c3"><span></span>Check</label>
+      </div>
+
+      <div class="modal-order__form-field radiobuttons">
+        <input type="radio" id="d1" name="dd">
+        <label for="d1"><span></span>Radio 1</label>
+        <input type="radio" id="d2" name="dd" checked="">
+        <label for="d2"><span></span>Radio 2</label>
+      </div>
+
+      <p class="modal-order__form-text">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem,
+        dolorum.
+      </p>
+      <button class="modal-order__confirm-button" type="submit">Confirm</button>
+    </form>
+    <button class="modal-order__button" data-modal-close="">
+      <svg class="modal-order__icon" width="20px" height="20px">
+        <use class="modal-order__close" href="/sprite.f14d31f7.svg#icon-modal"></use>
+      </svg>
+    </button>
+  </div>
+</div>
+
+<div class="backdrop-map is-hidden" data-backdrop-modal="">
+  <div class="modal-map">
+    <iframe src="https://my.atlistmaps.com/map/0ffe8552-b835-4e58-89cb-af56b6b2d6a8?share=true" allow="geolocation" width="100%" height="100%" frameborder="0" scrolling="no" allowfullscreen=""></iframe>
+    <button class="modal-map__button" data-modal-map-close="">
+      <svg class="modal-order__icon" width="20px" height="20px">
+        <use class="modal-order__close" href="/sprite.f14d31f7.svg#icon-modal"></use>
+      </svg>
+    </button>
+  </div>
+</div>
+
+    </main>
+
+    <script src="/index.707f265c.js"></script>
+    <script src="/index.e5e95213.js"></script>
+    <script src="/index.11602242.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/index.ef97ddb5.js"></script>
+    <script src="/index.ba4f3a9f.js"></script>
+    <script src="/index.4325b25b.js"></script>
+  </body>
+</html>
