@@ -85,7 +85,6 @@ body.menu-open {
 
 .site-nav-item {
   .header__menu-wrapper.is-open & {
-    padding: 10px 20px;
     margin: 0;
     border: 1px solid var(--mobile-bg-col);
     @media screen and (min-width: 1200px) {
@@ -105,7 +104,11 @@ body.menu-open {
 }
 
 .site-nav-link {
+  display: block;
   @media screen and (max-width: 1199px) {
     font-size: 14px;
+  }
+  .header__menu-wrapper.is-open & {
+    padding-left: 20px;
   }
 }
